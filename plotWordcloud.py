@@ -32,6 +32,7 @@ def generate_wordcloud(text):
     for word in text_split:
         if word.islower():
           word = word.capitalize()
+        
         pdb.set_trace()
         if word in dit and word not in stopwords:
             dit[word] += 1
