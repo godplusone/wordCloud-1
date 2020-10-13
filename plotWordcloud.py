@@ -34,7 +34,7 @@ def generate_wordcloud(text):
         else:
             dit[word] = 1
     pdb.set_trace()
-    
+
     def foc(i):
         return i[1]
      
@@ -42,7 +42,7 @@ def generate_wordcloud(text):
     lt.sort(key=foc)
     lt.reverse()
     for i in lt[:10]:
-        print(f'{i[0]:^7}{i[1]:^5}')
+        print(i)
     pdb.set_trace()
 
     # 生成词云 
