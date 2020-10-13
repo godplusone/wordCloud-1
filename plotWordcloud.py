@@ -26,11 +26,11 @@ def generate_wordcloud(text):
     wc.generate(text)
 
     # 生成的词云图像保存到本地
-    wc.to_file(path.join(d, "Images//alice.png"))
+    wc.to_file(path.join(d, "Images//haha.png"))
 
     # 显示图像
-    plt.imshow(wc, interpolation='bilinear')
+    # plt.imshow(wc, interpolation='bilinear')
     # interpolation='bilinear' 表示插值方法为双线性插值
-    plt.axis("off")# 关掉图像的坐标
-    plt.show()
+    # plt.axis("off")# 关掉图像的坐标
+    # plt.show()
 

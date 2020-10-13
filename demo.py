@@ -14,7 +14,7 @@ if __name__=='__main__':
     #  text="付求爱很帅并来到付求爱了网易研行大厦很帅 很帅 很帅"
 
     # 若是中文文本，则先进行分词操作
-    text=chnSegment.word_segment(text)
+    # text=chnSegment.word_segment(text)
     
     # 生成词云
     plotWordcloud.generate_wordcloud(text)
