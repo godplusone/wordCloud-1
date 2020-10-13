@@ -29,6 +29,7 @@ if __name__=='__main__':
     for i in range(len(paper)):
         if i % 2 ==0:
             line = paper[i]
+            pdb.set_trace()
             print(line)
             pdb.set_trace()
 
