@@ -18,6 +18,7 @@ def generate_wordcloud(text):
     # stopwords = set(STOPWORDS)
     stopwords = {"Learning","Via", "Network", "Neural Network", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
                  "Neural", "Networks", "A", "From"}
+    new_text = ''
     dit = {}
     text_split = text.split(" ")
     for word in text_split:
