@@ -23,6 +23,7 @@ def generate_wordcloud(text):
     text_split = text.split(" ")
     for word in text_split:
         word.lower():
+        
         if word in dit and word not in stopwords:
             dit[word] += 1
         else:
