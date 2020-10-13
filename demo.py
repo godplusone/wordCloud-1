@@ -30,8 +30,8 @@ if __name__=='__main__':
     	if i % 2 ==0:
     		None
     	else:
-    		print(f.readlines()[i])
-    		line = f.readlines()[i]
+    		line = paper[i]
+    		print(line)
     		pdb.set_trace()
 
     
