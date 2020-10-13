@@ -15,8 +15,9 @@ def generate_wordcloud(text):
     # alice_mask = np.array(Image.open(path.join(d, "Images//alice_mask.png")))
     font_path=path.join(d,"font//msyh.ttf")
     stopwords = set(STOPWORDS)
+    pdb.set_trace()
     wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
-           max_words=2000, # 词云显示的最大词数  
+           max_words=1000, # 词云显示的最大词数  
            # mask=alice_mask,# 设置背景图片       
            stopwords=stopwords, # 设置停用词
            font_path=font_path, # 兼容中文字体，不然中文会显示乱码
