@@ -39,7 +39,7 @@ def generate_wordcloud(text):
     for i in lt[:100]:
         print(i)
     
-    with open('doc/nips2020.txt','w') as fw:
+    with open('doc/nips2020.txt','w',encoding='utf-8') as fw:
         for k,v in dit.items():
           fw.write("%s,%d\n" % (k,v))
         fw.close()
