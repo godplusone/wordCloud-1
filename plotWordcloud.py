@@ -38,7 +38,12 @@ def generate_wordcloud(text):
     lt.reverse()
     for i in lt[:100]:
         print(i)
-    # pdb.set_trace()
+    
+    with open('doc/nips2020.txt','w') as fw:
+        for k,v in dit.items():
+          fw.write("%s,%d\n" % (k,v))
+        fw.close()
+
 
     # 生成词云 
     wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
