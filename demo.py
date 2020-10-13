@@ -30,14 +30,14 @@ if __name__=='__main__':
     d = path.dirname(__file__)
     f = open(path.join(d,'doc/nips2020paperlist.txt'), 'r', encoding='utf-8')
     paper = f.readlines()
-    text = []
+    text = ''
     for i in range(len(paper)):
         if i % 2 ==0:
             line = paper[i]
             print(line)
-            text.append(line)
+            text+=line
 
-    
+
     # 若是中文文本，则先进行分词操作
     # text=chnSegment.word_segment(text)
     
