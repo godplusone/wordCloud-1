@@ -26,10 +26,13 @@ if __name__=='__main__':
     d = path.dirname(__file__)
     f = open(path.join(d,'doc/nips2020paperlist.txt'), 'r', encoding='utf-8')
 
-    pdb.set_trace()
     for i in len(f.readlines()):
-    	if i 
-    	line = f.readlines()[i]
+    	if i % 2 ==0:
+    		None
+    	else:
+    		print(f.readlines()[i])
+    		line = f.readlines()[i]
+    		pdb.set_trace()
 
     
 
