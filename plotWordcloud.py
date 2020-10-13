@@ -16,8 +16,8 @@ def generate_wordcloud(text):
     # alice_mask = np.array(Image.open(path.join(d, "Images//alice_mask.png")))
     font_path=path.join(d,"font//msyh.ttf")
     # stopwords = set(STOPWORDS)
-    stopwords = {"Learning","Via", "Network", "Neural Network", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
-                 "Neural", "Networks", "A", "From"}
+    stopwords = {"Via", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
+                 "A", "From", "On"}
     new_text = ''
     dit = {}
     text_split = text.split(" ")
