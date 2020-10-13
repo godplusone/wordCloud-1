@@ -16,14 +16,13 @@ def generate_wordcloud(text):
     # alice_mask = np.array(Image.open(path.join(d, "Images//alice_mask.png")))
     font_path=path.join(d,"font//msyh.ttf")
     # stopwords = set(STOPWORDS)
-    stopwords = {"Via", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
-                 "As", "From", "On", "Is", "Are"}
+    stopwords = {"via", "for", "and", "with", "in", "of", "the", "to", "by", "an", "a", "on", "method", "non", "from",
+                 "as", "is", "are"}
     new_text = ''
     dit = {}
     text_split = text.split(" ")
     for word in text_split:
-        if word.islower():
-          word = word.capitalize()
+        word.lower():
         if word in dit and word not in stopwords:
             dit[word] += 1
         else:
