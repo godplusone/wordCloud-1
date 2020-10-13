@@ -35,7 +35,7 @@ if __name__=='__main__':
         if i % 2 ==0:
             line = paper[i].split("\n")[0]
             print(line)
-            text+=line
+            text+= line+" "
 
 
     # 若是中文文本，则先进行分词操作
