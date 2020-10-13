@@ -15,7 +15,7 @@ def generate_wordcloud(text):
     # alice_mask = np.array(Image.open(path.join(d, "Images//alice_mask.png")))
     font_path=path.join(d,"font//msyh.ttf")
     stopwords = set(STOPWORDS)
-    wc = WordCloud(background_color="white",# 设置背景颜色
+    wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
            max_words=2000, # 词云显示的最大词数  
            # mask=alice_mask,# 设置背景图片       
            stopwords=stopwords, # 设置停用词
@@ -26,7 +26,7 @@ def generate_wordcloud(text):
     wc.generate(text)
 
     # 生成的词云图像保存到本地
-    wc.to_file(path.join(d, "Images//haha.png"))
+    wc.to_file(path.join(d, "Images/haha.png"))
 
     # 显示图像
     # plt.imshow(wc, interpolation='bilinear')
