@@ -16,8 +16,8 @@ def generate_wordcloud(text):
     # alice_mask = np.array(Image.open(path.join(d, "Images//alice_mask.png")))
     font_path=path.join(d,"font//msyh.ttf")
     # stopwords = set(STOPWORDS)
-    stopwords = {"Learning","via", "Network", "Neural Network", "for", "and", "with", "in", "of", "the", "to", "by", "An", "A", "on", "Method", "Non", "from",
-                 "Neural", "Networks", "a", "The", "On", "learning"}
+    stopwords = {"Learning","Via", "Network", "Neural Network", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
+                 "Neural", "Networks", "A", "From"}
     
     wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
            max_words=1000, # 词云显示的最大词数  
