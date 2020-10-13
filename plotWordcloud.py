@@ -29,7 +29,7 @@ def generate_wordcloud(text):
     dit = {}
     text_split = text.split(" ")
     for word in text_split:
-        if word in dit:
+        if word in dit and word not in stopwords:
             dit[word] += 1
         else:
             dit[word] = 1
@@ -41,7 +41,7 @@ def generate_wordcloud(text):
     lt = list(dit.items())
     lt.sort(key=foc)
     lt.reverse()
-    for i in lt[:10]:
+    for i in lt[:100]:
         print(i)
     pdb.set_trace()
 
