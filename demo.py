@@ -25,8 +25,8 @@ if __name__=='__main__':
 
     d = path.dirname(__file__)
     f = open(path.join(d,'doc/nips2020paperlist.txt'), 'r', encoding='utf-8')
-
-    for i in range(len(f.readlines())):
+    paper = f.readlines()
+    for i in range(len(paper)):
     	if i % 2 ==0:
     		None
     	else:
