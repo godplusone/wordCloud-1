@@ -33,7 +33,7 @@ if __name__=='__main__':
     text = ''
     for i in range(len(paper)):
         if i % 2 ==0:
-            line = paper[i]
+            line = paper[i].split("\n")[0]
             print(line)
             text+=line
 
