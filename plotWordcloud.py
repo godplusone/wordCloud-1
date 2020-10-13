@@ -18,15 +18,6 @@ def generate_wordcloud(text):
     # stopwords = set(STOPWORDS)
     stopwords = {"Learning","Via", "Network", "Neural Network", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
                  "Neural", "Networks", "A", "From"}
-    
-    wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
-           max_words=1000, # 词云显示的最大词数  
-           # mask=alice_mask,# 设置背景图片       
-           stopwords=stopwords, # 设置停用词
-           font_path=font_path, # 兼容中文字体，不然中文会显示乱码
-                  )
-
-    pdb.set_trace()
     dit = {}
     text_split = text.split(" ")
     for word in text_split:
@@ -36,7 +27,7 @@ def generate_wordcloud(text):
             dit[word] += 1
         else:
             dit[word] = 1
-    pdb.set_trace()
+        new_text += word+" " 
 
     def foc(i):
         return i[1]
@@ -46,10 +37,16 @@ def generate_wordcloud(text):
     lt.reverse()
     for i in lt[:100]:
         print(i)
-    pdb.set_trace()
+    # pdb.set_trace()
 
     # 生成词云 
-    wc.generate(text)
+    wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
+       max_words=1000, # 词云显示的最大词数  
+       # mask=alice_mask,# 设置背景图片       
+       stopwords=stopwords, # 设置停用词
+       font_path=font_path, # 兼容中文字体，不然中文会显示乱码
+              )
+    wc.generate(new_text)
 
     # 生成的词云图像保存到本地
     wc.to_file(path.join(d, "Images/haha.png"))
