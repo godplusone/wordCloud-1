@@ -17,21 +17,24 @@ def generate_wordcloud(text):
     font_path=path.join(d,"font//msyh.ttf")
     # stopwords = set(STOPWORDS)
     stopwords = {"Learning","via", "Network", "Neural Network", "for", "and", "with", "in", "of", "the", "to", "by", "An", "A", "on", "Method", "Non", "from"}
-    pdb.set_trace()
+    
     wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
            max_words=1000, # 词云显示的最大词数  
            # mask=alice_mask,# 设置背景图片       
            stopwords=stopwords, # 设置停用词
            font_path=font_path, # 兼容中文字体，不然中文会显示乱码
                   )
+
     pdb.set_trace()
     dit = {}
-    for word in text:
+    text_split = text.split(" ")
+    for word in text_split:
         if word in dit:
             dit[word] += 1
         else:
             dit[word] = 1
-     
+    pdb.set_trace()
+    
     def foc(i):
         return i[1]
      
@@ -40,6 +43,7 @@ def generate_wordcloud(text):
     lt.reverse()
     for i in lt[:10]:
         print(f'{i[0]:^7}{i[1]:^5}')
+    pdb.set_trace()
 
     # 生成词云 
     wc.generate(text)
