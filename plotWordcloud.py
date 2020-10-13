@@ -17,7 +17,7 @@ def generate_wordcloud(text):
     font_path=path.join(d,"font//msyh.ttf")
     # stopwords = set(STOPWORDS)
     stopwords = {"Via", "For", "And", "With", "In", "Of", "The", "To", "By", "An", "A", "on", "Method", "Non", "from",
-                 "A", "From", "On"}
+                 "As", "From", "On", "Is", "Are"}
     new_text = ''
     dit = {}
     text_split = text.split(" ")
