@@ -46,7 +46,7 @@ def generate_wordcloud(text):
 
 
     # 生成词云 
-    wc = WordCloud(width=800, height=400, background_color="white",# 设置背景颜色
+    wc = WordCloud(width=1600, height=800, background_color="white",# 设置背景颜色
        max_words=1000, # 词云显示的最大词数  
        # mask=alice_mask,# 设置背景图片       
        stopwords=stopwords, # 设置停用词
