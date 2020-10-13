@@ -27,6 +27,10 @@ if __name__=='__main__':
     f = open(path.join(d,'doc/nips2020paperlist.txt'), 'r', encoding='utf-8')
 
     pdb.set_trace()
+    for i in len(f.readlines()):
+    	if i 
+    	line = f.readlines()[i]
+
     
 
     # 若是中文文本，则先进行分词操作
